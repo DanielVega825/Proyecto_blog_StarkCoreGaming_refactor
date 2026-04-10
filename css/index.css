@@ -1,0 +1,17 @@
+/* Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    background-color: #2A1B40;
+}
+
+/* Carrusel */
+.carousel-custom {
+    max-width: 900px; /* limita ancho en desktop */
+}
+
+.carousel-img {
+    height: 250px;
+    object-fit: cover;
+}
+
