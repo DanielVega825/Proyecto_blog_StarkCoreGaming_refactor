@@ -1,92 +1,109 @@
-.contacto {
-    padding: 10rem 0;
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.header-contacto {
-    text-align: center;
-}
+.main-content {
 
-.btn {
-    display: inline-flex;
+    flex: 1;
+    display: flex;
     align-items: center;
-    gap: var(--space-xs);
-    padding: 0.75rem 1.75rem;
-    border-radius: var(--radius-full);
+}
+
+.contacto {
+    width: 100%;
+}
+
+.contacto .container {
+    max-width: 1100px;
+    background-color: #2A1B40;
+    border-radius: 20px;
+    color: aliceblue;
+    padding: 3rem;
+}
+
+.contacto-subtitle {
+    font-size: 0.9rem;
+    color: #707f94;
+}
+
+.contacto-title {
+    font-size: 2.5rem;
     font-weight: 600;
-    font-size: 0.95rem;
-    /* transition → efecto suave al hacer hover
-     Curso: sección "Transiciones", 10:43:28 */
-    transition: transform var(--transition-fast),
-        box-shadow var(--transition-fast),
-        background var(--transition-fast);
 }
 
-
-.container-contacto {
-    margin: auto;
-    padding: 1.5rem;
-}
-
-.contact__grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
-    align-items: start;
-    width: 70%;
+.contacto-description {
+    color: #707f94;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-
-.contact-form {
-    background: #0a0b1e;
-    border: 1px solid #6c63ff40;
-    border-radius: 24px;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-label {
-    font-size: 0.85rem;
+.contact__info h2 {
+    font-size: 1.8rem;
     font-weight: 600;
-    color: #a0a3b8;
 }
 
-/* Estilos de los campos de formulario */
-.form-input {
-    background: #12142e;
-    border: 1px solid #6c63ff40;
-    border-radius: 8px;
-    padding: 0.8rem 1.1rem;
-    color: #ffffff;
-    font-size: 0.95rem;
-    /* outline: se controla en focus para accesibilidad
-     Curso: sección "Contorno (outline)", 11:16:34 */
-    outline: none;
+.contact__info p {
+    color: #707f94;
 }
 
-/* Pseudoclase :focus → campo seleccionado por el usuario
-   Curso: sección "Pseudoclases", 9:04:51 */
-.form-input:focus {
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+.contact__details i {
+    color: #707f94;
 }
 
-.form-textarea {
-    resize: vertical;
-    min-height: 130px;
-    min-width: 100%;
+.contact__form-card {
+    background-color: #020617;
+    border-radius: 20px;
+}
+
+.contact__form-card .form-control {
+    background-color: #0b132b;
+    border: 1px solid #1e293b;
+    color: white;
+}
+
+.contact__form-card .form-control::placeholder {
+    color: #64748b;
+}
+
+.contact__form-card .form-control:focus {
+    border-color: #3b82f6;
+    box-shadow: none;
+}
+
+.contact__form-card .form-label {
+    color: #cbd5f5;
+}
+
+.contact__form-card .btn {
+    background-color: #0f172a;
+    border: none;
+    opacity: 0.7;
+}
+
+.contact__form-card .btn:hover {
+    opacity: 1;
+}
+
+@media (max-width: 991px) {
+    .contact__info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact__icon {
+        display: none;
+    }
 }
