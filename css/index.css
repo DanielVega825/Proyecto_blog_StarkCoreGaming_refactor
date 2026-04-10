@@ -6,16 +6,13 @@
 }
 
 /* Carrusel */
-.carousel-custom {
-    
+.carousel-custom {    
     max-width: 900px;
-
     /* limita ancho en desktop */
     .carousel-inner {
         display: flex;
         justify-content: center;
         gap: 1rem;
-
         .carousel-item {
             .carousel-img {
                 max-width: 160px;
