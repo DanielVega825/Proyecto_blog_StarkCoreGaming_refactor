@@ -19,7 +19,7 @@
 
 .contacto .container {
     max-width: 1100px;
-    background-color: #2A1B40;
+    /* background-color: #2A1B40; */
     border-radius: 20px;
     color: aliceblue;
     padding: 3rem;
@@ -55,7 +55,7 @@
 }
 
 .contact__form-card {
-    background-color: #020617;
+    background-color: #02061753;
     border-radius: 20px;
 }
 

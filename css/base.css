@@ -1,3 +1,9 @@
+html {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #613d95;
+}
+
 body {
     background-color: #613d95;
     color: #F2E2CE;
