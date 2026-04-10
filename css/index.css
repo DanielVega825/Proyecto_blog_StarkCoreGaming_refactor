@@ -7,11 +7,21 @@
 
 /* Carrusel */
 .carousel-custom {
-    max-width: 900px; /* limita ancho en desktop */
-}
+    
+    max-width: 900px;
 
-.carousel-img {
-    height: 250px;
-    object-fit: cover;
-}
+    /* limita ancho en desktop */
+    .carousel-inner {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
 
+        .carousel-item {
+            .carousel-img {
+                max-width: 160px;
+                height: 250px;
+                object-fit: fill;
+            }
+        }
+    }
+}
