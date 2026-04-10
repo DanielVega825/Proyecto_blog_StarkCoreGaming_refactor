@@ -1,8 +1,4 @@
-body {
-    background: linear-gradient(180deg, #2A1B40, #1B0B2A);
-}
-
-.about-container {
+/* .about-container {
     padding: 3rem 2rem;
     max-width: 900px;
     margin: auto;
@@ -56,6 +52,51 @@ body {
 .team-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #00f2fe;
+}
+
+.about-container {
+    flex-grow: 1;
+} */
+
+/* CONTENEDOR GENERAL */
+.about-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* TARJETAS */
+.about-section {
+    background-color: #1e293b; /* gris oscuro elegante */
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* HOVER (efecto pro) */
+.about-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ICONOS */
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: block;
+    color: #38bdf8; /* azul gamer */
+}
+
+/* TITULOS */
+.about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* TEXTO */
+.about-section p {
+    font-size: 0.95rem;
+    color: #cbd5f5;
 }
 
 /* Móviles grandes / Tablets pequeñas */

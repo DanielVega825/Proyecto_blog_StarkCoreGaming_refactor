@@ -22,6 +22,11 @@ body {
             }
         }
     }
+
+    main {
+        height: 100%;
+    }
+
     .footer-container {
         color: #F2E2CE;
         background-color: #2d1c45;

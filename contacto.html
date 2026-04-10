@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-    
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="contacto.css">
-
     <title>Contacto</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
 </head>
 
-<body class="layout">
+<body class="d-flex flex-column min-vh-100">
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">Stark Core Gaming</a>
- 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
- 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="quienessomos.html">¿Quiénes somos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Stark Core Gaming</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quienessomos.html">¿Quiénes somos?</a>
+                </li>
+                <li class="nav-item">
+                    <!-- ACTIVE AQUÍ -->
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <main class="main-content">
+<main class="flex-grow-1">
 
         <section class="contacto py-5">
             <div class="container">
@@ -56,7 +49,7 @@
                     <span class="contacto-subtitle">Entérate de las noticias de videojuegos</span>
                     <h1 class="contacto-title">Contáctanos</h1>
                     <p class="contacto-description">
-                        Cuéntanos qué información te pareció importante de nuestro blog 
+                        Cuéntanos qué información te pareció importante de nuestro blog
                         y te responderemos en menos de 24 horas
                     </p>
                 </div>
@@ -67,7 +60,7 @@
                         <div class="contact__info">
                             <h2>¿Quieres recibir más información?</h2>
                             <p>
-                                Entérate del mundo de los videojuegos y además cuéntanos 
+                                Entérate del mundo de los videojuegos y además cuéntanos
                                 qué información podemos añadir y mejorar
                             </p>
 
@@ -117,12 +110,8 @@
 
                                 <div class="mb-4">
                                     <label class="form-label">Mensaje *</label>
-                                    <textarea 
-                                        class="form-control"
-                                        rows="5"
-                                        placeholder="Cuéntanos cómo podemos ayudarte..."
-                                        required
-                                    ></textarea>
+                                    <textarea class="form-control" rows="5"
+                                        placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary w-100">
@@ -140,20 +129,19 @@
 
     </main>
 
-    <footer class="footer-container text-center text-white py-4 mt-5">
-        <div class="container">
- 
- 
-            <ul class="names-container">
-                <li>Camilo Castellanos</li>
-                <li>Marcia Baquero</li>
-                <li>Daniel Vega</li>
-                <li>Leider Merchan</li>
-                <li>Yesica González</li>
-            </ul>
- 
-        </div>
-    </footer>
+    <!-- FOOTER -->
+<footer class="bg-dark text-center text-white py-4">
+    <div class="container">
+        <ul class="list-unstyled mb-0">
+            <li>Camilo Castellanos</li>
+            <li>Marcia Baquero</li>
+            <li>Daniel Vega</li>
+            <li>Leider Merchan</li>
+            <li>Yesica González</li>
+        </ul>
+    </div>
+</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

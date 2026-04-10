@@ -1,85 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="contacto.css">
-    <link rel="stylesheet" href="quienessomos.css">
 
-    <title>¿Quienes somos?</title>
+    <title>¿Quiénes somos?</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/quienessomos.css">
 </head>
-<body>
-    <!-- Contenido acá -->
-    <nav class="navbar-container">
-        <div class="logo">
-            Stark Core Gaming
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- NAVBAR (IGUAL QUE INDEX) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Stark Core Gaming</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <!-- ACTIVE AQUÍ -->
+                    <a class="nav-link active" href="quienessomos.html">¿Quiénes somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-        <div class="links-container">
-            <a href="index.html">Inicio</a>
-            <a href="quienessomos.html">¿Quienes somos?</a>
-            <a href="contacto.html">Contacto</a>
-        </div>        
-    </nav>
+    </div>
+</nav>
 
-    <!-- QUIÉNES SOMOS -->
-    <section class="about-container container py-5">
+<main class="flex-grow-1">
+        <!-- QUIÉNES SOMOS -->
+        <section class="about-container container ">
 
-        <h1 class="title text-center mb-5">¿Quiénes somos?</h1>
+            <h1 class="title text-center mb-5">¿Quiénes somos?</h1>
 
-        <div class="row g-4"> 
+            <div class="row g-4">
 
-            <div class="col-md-4">
-                <div class="about-section h-100 text-center">
-                    <i class="bi bi-people-fill icon"></i>
-                    <h2>Sobre nosotros</h2>
-                    <p>
-                        Stark Core Gaming es un proyecto enfocado en el desarrollo de contenido relacionado con videojuegos. Nuestro objetivo es ofrecer información para la comunidad gamer.
-                    </p>
+                <div class="col-md-4">
+                    <div class="about-section h-100 text-center">
+                        <i class="bi bi-people-fill icon"></i>
+                        <h2>Sobre nosotros</h2>
+                        <p>
+                            Stark Core Gaming es un proyecto enfocado en el desarrollo de contenido relacionado con
+                            videojuegos. Nuestro objetivo es ofrecer información para la comunidad gamer.
+                        </p>
+                    </div>
                 </div>
+
+                <div class="col-md-4">
+                    <div class="about-section h-100 text-center">
+                        <i class="bi bi-bullseye icon"></i>
+                        <h2>Misión</h2>
+                        <p>
+                            Ser un ejemplo de comunidad en internet, enfocada en la calidad, no en el tamaño.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="about-section h-100 text-center">
+                        <i class="bi bi-eye-fill icon"></i>
+                        <h2>Visión</h2>
+                        <p>
+                            Ser una plataforma reconocida en el mundo digital por su innovación, calidad de contenido y
+                            aporte a la comunidad gamer.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="col-md-4">
-                <div class="about-section h-100 text-center">
-                    <i class="bi bi-bullseye icon"></i>
-                    <h2>Misión</h2>
-                    <p>
-                        Ser un ejemplo de comunidad en internet, enfocada en la calidad, no en el tamaño.
-                    </p>
-                </div>
-            </div>
+        </section>
+        <!-- fin contenido -->
 
-            <div class="col-md-4">
-                <div class="about-section h-100 text-center">
-                    <i class="bi bi-eye-fill icon"></i>
-                    <h2>Visión</h2>
-                    <p>
-                        Ser una plataforma reconocida en el mundo digital por su innovación, calidad de contenido y aporte a la comunidad gamer.
-                    </p>
-                </div>
-            </div>
+        </main>
 
-        </div> 
-
-    </section>
-    <!-- fin contenido -->
-
-    <footer class="footer-container">
-        <span class="logo-email-container">
-            <span class="footer-logo-name">Stark Core Gaming</span>
-            <span class="blog-email">blog@starkcoregaming.com</span>
-        </span>
-        <ul class="footer-members-list">
+<!-- FOOTER (CON NOMBRES) -->
+<footer class="bg-dark text-center text-white py-4">
+    <div class="container">
+        <ul class="list-unstyled mb-0">
             <li>Camilo Castellanos</li>
             <li>Marcia Baquero</li>
             <li>Daniel Vega</li>
             <li>Leider Merchan</li>
             <li>Yesica González</li>
         </ul>
-    </footer>    
+    </div>
+</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
